@@ -18,3 +18,10 @@ Tasks
 4.  Use the notebook lecture1-benchmark.ipynb to benchmark your implementation 
     against NumPy's argmax().
 """
+
+import numpy as np
+
+Arr = np.array([1, 2, 3, 4, 5, -2])
+maxElement = Arr.max()
+index = np.where(Arr == maxElement)[0]
+print(type(index))
